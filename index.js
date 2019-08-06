@@ -17,3 +17,10 @@ function greeting(){
   return "Hello, everybody!"
 }
 
+it('concatenates strings to greet a special guest in `greetSpecialGuest`', function() {
+  expect(greetSpecialGuest).toEqual(`Hello, ${specialGuest}!`)
+})
+
+function greetSpecialGuest(specialGuest)
+  return `Hello, ${specialGuest}!`
+
